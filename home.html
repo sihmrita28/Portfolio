@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sihmrita lokesh| Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="icon/chat-dots.svg">
+    <link rel="icon" href="logo/Sihmrita lokesh.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -51,7 +51,7 @@
             <div class="intro-text">
                 <h1>Hi!</h1>
                 <h2>I'm Sihmrita!</h2>
-                <p>Google Certified Business Intelligence and Data Analyst</p>
+                <p>Certified Business Intelligence and Data Analyst</p>
                 <button onclick="location.href='#main'" class="btn">Here's More!</button>
             </div>
             <!-- WRAPPER WITH RELATIVE POSITION -->
@@ -61,41 +61,64 @@
                 <div class="white-background"></div>
 
                 <div class="icon-grid">
-                    <div class="icon">
-                        <i class="bi bi-activity"></i>
-                        <h3 class="title">
-                            <a href="">
-                                50+
-                            </a>
-                        </h3>
-                        <p>Personal Data Analysis Projects</p>
+                    <div class="icon" onclick="openPopup('popup1')">
+                        <i class="bi bi-cpu"></i>
+                        <h3 class="title">6+ Tech</h3>
+                        <p>Tech Internships & Projects</p>
                     </div>
-                    <div class="icon">
-                        <i class="bi bi-gem"></i>
-                        <h3 class="title">
-                            <a href="">
-                                1+ Year
-                            </a>
-                        </h3>
-                        <p>Professional + Freelancing + Internship Experience</p>
+                    <div class="icon" onclick="openPopup('popup2')">
+                        <i class="bi bi-hourglass-split"></i>
+                        <h3 class="title">1+ Year</h3>
+                        <p>Practical Exposure</p>
                     </div>
-                    <div class="icon">
-                        <i class="bi bi-easel"></i>
-                        <h3 class="title">
-                            <a href="">
-                                2+ Years
-                            </a>
-                        </h3>
-                        <p>Experience as a Private Tutor</p>
+                    <div class="icon" onclick="openPopup('popup3')">
+                        <i class="bi bi-journal-richtext"></i>
+                        <h3 class="title">3+ Years</h3>
+                        <p>Learning, Mentoring & Research</p>
                     </div>
-                    <div class="icon">
-                        <i class="bi bi-command"></i>
-                        <h3 class="title">
-                            <a href="">
-                                3 Years
-                            </a>
-                        </h3>
-                        <p>Research Experience</p>
+                    <div class="icon" onclick="openPopup('popup4')">
+                        <i class="bi bi-wrench-adjustable-circle"></i>
+                        <h3 class="title">5+ Tools</h3>
+                        <p> Certified Industry Tools</p>
+                    </div>
+                </div>
+                <div id="popup1" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup('popup1')">&times;</span>
+                        <h3>Tech Internships & Projects</h3>
+                        <p>Gained hands-on experience through internships in Web Development, Power BI, Cybersecurity,
+                            and Automation, across on-site and online formats. Worked with real-world tools and
+                            technologies in both individual and collaborative settings.</p>
+                    </div>
+                </div>
+
+                <div id="popup2" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup('popup2')">&times;</span>
+                        <h3>Practical Exposure</h3>
+                        <p>Interned with reputed organizations like Reliance Industries, Edunet Foundation, Prodigy
+                            Infotech, MD Quality Apps, and UPR Tech India—contributing to dashboards, portfolio sites,
+                            secure systems, and enterprise automation tools.</p>
+                    </div>
+                </div>
+
+                <div id="popup3" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup('popup3')">&times;</span>
+                        <h3>Learning & Research</h3>
+                        <p>Engaged in research-based learning and self-initiated exploration in AI, web technologies,
+                            and cybersecurity. Also supported peers as a private tutor, helping others grasp core
+                            technical concepts while strengthening personal understanding.</p>
+                    </div>
+                </div>
+
+                <div id="popup4" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup('popup4')">&times;</span>
+                        <h3>Certified Industry Tools</h3>
+                        <p>Certified in Power BI, Web Designing, Cybersecurity, and Cambridge English, proving technical
+                            and communication skills. Strong foundation in tools like VS Code, Excel, GitHub, and
+                            low-code platforms like WordPress.</p>
                     </div>
                 </div>
             </div>
@@ -289,6 +312,7 @@
             });
         });
     </script> -->
+    <script src="popup.js"></script>
 </body>
 
 </html>
