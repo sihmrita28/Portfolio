@@ -59,7 +59,7 @@ section {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 clamp(10px, 5%, 80px);
 }
 
 .container-top a {
@@ -132,11 +132,11 @@ section {
 }
 
 .container-fluid h1 {
-   
+
     font-size: 35px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
-   
+
 }
 
 
@@ -205,7 +205,7 @@ section {
 .intro-text h1,
 .intro-text h2 {
     color: white;
-    font-size: 70px;
+    font-size: clamp(32px, 5vw, 70px);
     font-family: 'Poppins', sans-serif;
     text-align: center;
     top: 20px;
@@ -549,8 +549,7 @@ section {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    ;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
     padding: 20px 150px;
     padding-bottom: 40px;
@@ -860,20 +859,16 @@ section {
 
 .abt-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 30px;
-    padding: 60px 60px;
+    /* padding: 60px 60px; */
     flex-wrap: wrap;
-}
-
-.abt-details,
-.education {
-    min-width: 300px;
+    margin-top: 60px;
+    padding: 0px 5%;
 }
 
 .abt-details {
     text-align: left;
-    margin-left: 100px;
     width: 700px;
 }
 
@@ -1039,10 +1034,12 @@ section {
 
 .proj-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 30px;
-    padding: 60px 60px;
+    /* padding: 60px 60px; */
     flex-wrap: wrap;
+    margin-top: 60px;
+    padding: 0px 5%;
 }
 
 .proj-details,
@@ -1052,7 +1049,7 @@ section {
 
 .proj-details {
     text-align: left;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     width: 700px;
 }
 
@@ -1126,135 +1123,3 @@ section {
     list-style: none;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.container,
-section,
-.portfolio-card {
-    max-width: 100%;
-    overflow-wrap: break-word;
-}
-
-
-
-/* =======================
-   RESPONSIVE DESIGN RULES
-   ======================= */
-
-/* Tablet and smaller laptops */
-@media (max-width: 1024px) {
-    body {
-        padding: 0 20px;
-    }
-
-    header,
-    nav,
-    footer {
-        padding: 10px;
-    }
-
-    h1,
-    h2,
-    h3 {
-        font-size: 95%;
-    }
-
-    .portfolio-wrapper {
-        gap: 25px;
-    }
-}
-
-/* Large phones & small tablets */
-@media (max-width: 768px) {
-    body {
-        padding: 0 10px;
-    }
-
-    /* Stack items vertically */
-    .portfolio-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .portfolio-card {
-        width: 100% !important;
-        margin: 0 auto;
-    }
-
-    /* Text size adjustments */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-size: 90%;
-    }
-
-    p,
-    li {
-        font-size: 14px;
-    }
-
-    /* Mobile navigation */
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar a {
-        padding: 8px 0;
-        display: block;
-    }
-
-    /* Contact section */
-    .contact-section {
-        padding: 20px;
-    }
-}
-
-/* Small phones */
-@media (max-width: 480px) {
-
-    header,
-    footer {
-        text-align: center;
-    }
-
-    h1,
-    h2,
-    h3 {
-        font-size: 85%;
-    }
-
-    p,
-    li {
-        font-size: 13px;
-        line-height: 1.4;
-    }
-
-    /* Buttons full width */
-    button,
-    .btn,
-    input[type="submit"] {
-        width: 100%;
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    /* Contact form fields */
-    input,
-    textarea {
-        width: 100%;
-        font-size: 14px;
-    }
-}
