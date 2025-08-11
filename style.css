@@ -36,6 +36,18 @@
 body {
     background-color: rgba(0, 0, 0, 0.966);
     font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    /* start invisible */
+    transform: translateY(40px);
+    /* optional slide-in */
+    animation: pageFade 1s ease forwards;
+}
+
+@keyframes pageFade {
+    to {
+        opacity: 1;               /* fully visible */
+        transform: translateY(0);
+    }
 }
 
 section {
@@ -398,8 +410,8 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tool-box:hover {
-    transform: translateY(-5px);
+.content:hover {
+    transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -656,32 +668,52 @@ section {
 .contact-text {
     background-color: rgba(54, 53, 53, 0.904);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     border: 1px solid rgba(126, 125, 125, 0.5);
     border-radius: 5px;
     padding: 20px;
     margin-top: 15px;
     width: 300px;
+    text-decoration: none;
+    text-align: start;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
-.contact-info h1 {
+.contact-text:hover {
+    transform: translateY(-10px);
+}
+
+.contact-text a {
+    text-decoration: none;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+.contact-info span {
     text-align: start;
     text-decoration: none;
     font-size: 20px;
     color: white;
     font-weight: 600;
+    padding-left: 10px;
 }
 
 .contact-info i {
+    display: inline-flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: black;
     color: white;
     padding: 10px;
-    font-size: 1 rem;
-    text-decoration: none;
-    align-items: start;
-    margin-right: 6px;
+    /* text-decoration: none; */
+    /* align-items: start; */
+    /* margin-right: 6px; */
     cursor: pointer;
 }
 
@@ -867,6 +899,7 @@ section {
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .education {
@@ -891,7 +924,8 @@ section {
 .college,
 .school {
     text-wrap: wrap;
-    text-align: left;
+    /* text-align: left; */
+    text-align: justify;
 }
 
 .college h1,
@@ -906,6 +940,7 @@ section {
 .college p,
 .school p {
     font-size: 12px;
+    margin-bottom: 8px;
 }
 
 .exp-btn {
@@ -924,6 +959,21 @@ section {
     margin-top: 30px;
 }
 
+.back-design {
+    border: 1px solid rgba(126, 125, 125, 0.5);
+    height: 350px;
+    padding: 20px;
+    padding-right: 0;
+    background-color: rgba(61, 59, 59, 0.425);
+    box-shadow: 1px 2px rgba(126, 125, 125, 0.5);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.back-design:hover {
+    transform: translateX(20px);
+    transition: transform 0.5s ease;
+}
 
 #port {
     display: flex;
@@ -1035,6 +1085,7 @@ section {
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .proj-details li {
@@ -1084,7 +1135,7 @@ section {
 .college p,
 .school p {
     font-size: 15px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .school li {
