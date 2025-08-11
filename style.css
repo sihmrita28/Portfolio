@@ -36,18 +36,6 @@
 body {
     background-color: rgba(0, 0, 0, 0.966);
     font-family: 'Poppins', sans-serif;
-    opacity: 0;
-    /* start invisible */
-    transform: translateY(40px);
-    /* optional slide-in */
-    animation: pageFade 1s ease forwards;
-}
-
-@keyframes pageFade {
-    to {
-        opacity: 1;               /* fully visible */
-        transform: translateY(0);
-    }
 }
 
 section {
@@ -558,6 +546,10 @@ section {
     font-size: 12px;
 }
 
+.portfolio-item a {
+    text-decoration: none;
+}
+
 .portfolio-filters .active {
     background-color: #2f074b;
     color: white;
@@ -579,6 +571,7 @@ section {
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .portfolio-card:hover {
@@ -594,21 +587,18 @@ section {
 .portfolio-info {
     padding: 16px;
     text-align: center;
-    text-decoration: none;
 }
 
 .portfolio-info h6 {
-    font-size: 13px;
+    font-size: 11px;
     color: #2b0546;
     margin-bottom: 8px;
 }
 
 .portfolio-info h4 {
-    font-size: 15px;
+    font-size: 19px;
     margin-bottom: 4px;
-}
-
-.portfolio-info a {
+    text-decoration: none;
     color: black;
 }
 
@@ -699,7 +689,7 @@ section {
     font-size: 20px;
     color: white;
     font-weight: 600;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .contact-info i {
@@ -711,6 +701,7 @@ section {
     background-color: black;
     color: white;
     padding: 10px;
+    padding-top: 12px;
     /* text-decoration: none; */
     /* align-items: start; */
     /* margin-right: 6px; */
@@ -719,7 +710,7 @@ section {
 
 .contact-info p {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     color: white;
     font-weight: 500;
     padding-left: 45px;
@@ -1141,4 +1132,137 @@ section {
 .school li {
     font-size: 15px;
     list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container,
+section,
+.portfolio-card {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+
+
+/* =======================
+   RESPONSIVE DESIGN RULES
+   ======================= */
+
+/* Tablet and smaller laptops */
+@media (max-width: 1024px) {
+    body {
+        padding: 0 20px;
+    }
+
+    header,
+    nav,
+    footer {
+        padding: 10px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 95%;
+    }
+
+    .portfolio-wrapper {
+        gap: 25px;
+    }
+}
+
+/* Large phones & small tablets */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    /* Stack items vertically */
+    .portfolio-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .portfolio-card {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+
+    /* Text size adjustments */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 90%;
+    }
+
+    p,
+    li {
+        font-size: 14px;
+    }
+
+    /* Mobile navigation */
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        padding: 8px 0;
+        display: block;
+    }
+
+    /* Contact section */
+    .contact-section {
+        padding: 20px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    header,
+    footer {
+        text-align: center;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 85%;
+    }
+
+    p,
+    li {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    /* Buttons full width */
+    button,
+    .btn,
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* Contact form fields */
+    input,
+    textarea {
+        width: 100%;
+        font-size: 14px;
+    }
 }
