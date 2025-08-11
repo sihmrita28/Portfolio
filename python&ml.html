@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zxx" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sihmrita lokesh| Portfolio</title>
+    <link rel="icon" href="logo/Sihmrita lokesh.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- <script src="snowflakes.js"></script> -->
+
+<body>
+    <section id="topbar">
+        <div class="container-top">
+
+            <a class="mail" href="mailto:sihmrithal281203@gmail.com">
+                <i class="bi bi-envelope-at"></i><span>sihmrithal281203@gmail.com</span>
+            </a>
+
+            <div class="social">
+                <a href="https://github.com/sihmrita28"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/sihmrita-lokesh-b4b35326a/"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+        </div>
+    </section>
+    <header id="header" class="sticky-top">
+        <nav class="container-fluid">
+            <a href="index.html">
+                <h1>Portfolio<span>.</span></h1>
+            </a>
+            <div class="navbar">
+                <ul class="nav">
+                    <li><a href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+                    <li><a href="about.html"><i class="bi bi-person-circle"></i> About Me</a></li>
+                    <li><a href="Experience.html"><i class="bi bi-briefcase"></i> Experience</a></li>
+                    <li><a href="index.html#portfolio"><i class="bi bi-code-slash"></i> Projects</a></li>
+                    <li><a href="resume.html"><i class="bi bi-file-earmark-person-fill"></i>Resume</a></li>
+                    <li><a href="index.html#contact"><i class="bi bi-envelope-fill"></i> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="port">
+        <div class="port">
+            <div class="port-text">
+                <h1>Sentiment Analysis</h1>
+                <p>Naan Mudhalvan Project</p>
+            </div>
+        </div>
+    </section>
+    <section id="proj">
+        <div class="proj-head">
+            <h1><span><a href="index.html">Home</a></span>/ Sentiment Analysis</h1>
+        </div>
+        <div class="proj-container">
+            <div class="proj-details">
+                <h1>Objective</h1>
+                <p>The objective of this project is to build a sentiment analysis model that can automatically classify
+                    product reviews into Positive, Neutral, or Negative categories. This allows businesses to quickly
+                    interpret customer feedback, monitor product performance, and improve customer satisfaction
+                    strategies.
+                </p>
+                <h2>Methodology</h2>
+                <p><span>Data Transformation:</span><br>
+                    The dataset containing product reviews, ratings, and sentiments is first cleaned by removing missing
+                    or null entries. The review texts are then converted into numerical format using TF-IDF
+                    vectorization, enabling the model to process and learn from the textual data. Standard text
+                    preprocessing techniques like stop-word removal are applied.
+                </p>
+                <p><span>Modeling and Metrics:</span><br>
+                    The data is split into training and testing sets using an 80-20 split. A Logistic Regression model
+                    is used for classification due to its simplicity and effectiveness in text classification tasks.
+                    Model performance is evaluated using key metrics like accuracy, precision, recall, and F1-score, and
+                    visualized with a confusion matrix.
+                </p>
+                <p><span>Visualization:</span><br>
+                    A confusion matrix heatmap is used to display the number of correctly and incorrectly predicted
+                    sentiments. Additional plots such as bar charts can be created to show sentiment distribution and
+                    review lengths, if needed.
+                </p>
+                <p><span>User Review Prediction:</span><br>
+                    A custom user input feature is added, where a user can enter a product review. The model processes
+                    the input and predicts the sentiment in real time using the same TF-IDF vectorizer and trained
+                    classifier.
+                </p>
+            </div>
+            <div class="education">
+                <h1>Summary!</h1>
+                <div class="underline"></div>
+                <div class="college">
+                    <h1><strong>TOOLS</strong></h1>
+                    <p>Python, Pandas, scikit-learn, Matplotlib, Seaborn</p>
+                </div>
+                <div class="school">
+                    <h1><strong>STAGES</strong></h1>
+                    <ul>
+                        <li>Data Cleaning and Preparation</li>
+                        <li>Text Vectorization using TF-IDF</li>
+                        <li>Model Training with Logistic Regression</li>
+                        <li>Model Evaluation and Visualization</li>
+                        <li>Real-time Review Sentiment Prediction</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
