@@ -754,7 +754,7 @@ section {
     margin-top: 20px;
 }
 
-#resume iframe {
+#resume embed {
     display: flex;
     justify-content: center;
     width: 65%;

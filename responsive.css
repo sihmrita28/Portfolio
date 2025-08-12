@@ -48,11 +48,14 @@
         background: none;
         border: none;
         color: white;
+        /* Make sure it contrasts with the navbar background */
         font-size: 28px;
         cursor: pointer;
         position: absolute;
         top: 15px;
         right: 20px;
+        z-index: 1000;
+        /* Ensures it’s on top */
     }
 
     .nav-open .navbar {
@@ -144,9 +147,10 @@
 
     /* Resume iframe scaling */
     #resume iframe {
-        width: 95%;
-        height: auto;
-        min-height: 500px;
+        width: 100%;
+        height: 90vh;
+        /* takes up most of the viewport height */
+        border: none;
     }
 
     /* =============================
@@ -297,5 +301,24 @@
     .portfolio-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         padding: 20px 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .proj-container,
+    .proj-details,
+    .education {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    img,
+    iframe {
+        max-width: 100%;
+        height: auto;
     }
 }
