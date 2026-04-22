@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zxx" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sihmrita lokesh| Portfolio</title>
+    <link rel="icon" href="logo/Sihmrita lokesh.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<!-- <script src="snowflakes.js"></script> -->
+
+<body>
+    <section id="topbar">
+        <div class="container-top">
+
+            <a class="mail" href="mailto:sihmrithal281203@gmail.com">
+                <i class="bi bi-envelope-at"></i><span>sihmrithal281203@gmail.com</span>
+            </a>
+
+            <div class="social">
+                <a href="https://github.com/sihmrita28"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/sihmrita-lokesh-b4b35326a/"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+        </div>
+    </section>
+    <header id="header" class="sticky-top">
+        <nav class="container-fluid">
+            <a href="index.html">
+                <h1>Portfolio<span>.</span></h1>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <div class="navbar">
+                <ul class="nav">
+                    <li><a href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+                    <li><a href="about.html"><i class="bi bi-person-circle"></i> About Me</a></li>
+                    <li><a href="Experience.html"><i class="bi bi-briefcase"></i> Experience</a></li>
+                    <li><a href="index.html#portfolio"><i class="bi bi-code-slash"></i> Projects</a></li>
+                    <li><a href="resume.html"><i class="bi bi-file-earmark-person-fill"></i>Resume</a></li>
+                    <li><a href="index.html#contact"><i class="bi bi-envelope-fill"></i> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="port">
+        <div class="port">
+            <div class="port-text">
+                <h1>AI Skill Forecasting</h1>
+                <p>Final Year Project</p>
+            </div>
+        </div>
+    </section>
+    <section id="proj">
+        <div class="proj-head">
+            <h1><span><a href="index.html">Home</a></span>/ Skill Forecasting</h1>
+        </div>
+        <div class="proj-container">
+            <div class="proj-details">
+                <h1>Objective</h1>
+                <p>The objective of this project is to develop an AI-powered Career Intelligence Platform (SynapsePath)
+                    that analyzes resumes, evaluates ATS compatibility, and provides personalized career guidance.
+                    The system focuses on extracting structured skill data from resumes, computing ATS scores using
+                    TF-IDF and Cosine Similarity, and identifying skill gaps based on industry requirements. It further
+                    enhances user growth by recommending learning resources, generating adaptive quizzes, and suggesting
+                    relevant job roles and companies. The platform aims to transform traditional career guidance into a
+                    data-driven, automated, and
+                    personalized system that helps users align their skills with evolving job market demands.
+                </p>
+                <h2>Methodology</h2>
+                <p>The system follows a three-tier architecture consisting of a frontend interface, backend processing
+                    layer, and data storage module.
+                    Users upload resumes in PDF or DOCX format, which are processed using text extraction tools such as
+                    pdfplumber and python-docx. The extracted text undergoes preprocessing including tokenization,
+                    normalization, and stop-word removal.
+                    The ATS scoring engine uses TF-IDF to identify important keywords and Cosine Similarity to measure
+                    alignment between the resume and job description. A weighted scoring model evaluates multiple
+                    parameters including keyword relevance, formatting, readability, and experience.
+                    Skill gap analysis is performed using set difference logic by comparing extracted skills with
+                    predefined domain skill sets. The system then generates personalized outputs including:
+                    - ATS score evaluation
+                    - Skill gap identification
+                    - Career recommendations
+                    - Adaptive AI-generated quizzes
+                    - Learning resource suggestions
+                    Additionally, a rule-based fallback system ensures reliable performance even without external APIs,
+                    while SHA-256 hashing is used to maintain data integrity and prevent duplicate processing.
+                </p>
+                <p><span>Tool Features and Highlights:</span><br>
+                    Key features of the SynapsePath platform include:
+                    - Resume Parsing Engine: Extracts structured data from unstructured resumes
+                    - ATS Scoring System: Uses TF-IDF and Cosine Similarity for accurate evaluation
+                    - Weighted Scoring Algorithm: Combines keyword match, formatting, readability, and experience
+                    - Semantic Skill Mapping: Matches skills across domains using a predefined skill database
+                    - Skill Gap Analysis: Identifies missing skills required for target roles
+                    - Career Recommendation Engine: Suggests roles based on user skill profiles
+                    - Adaptive AI Quiz: Generates questions targeting identified weak areas
+                    - Learning Resource Recommendation: Maps skill gaps to relevant courses
+                    - Cross-Domain Intelligence: Supports multiple domains like IT, Finance, Mechanical, etc.
+                    - Secure Data Handling: Implements SHA-256 hashing for integrity and duplication prevention
+                </p>
+                <p><span>User Interaction and Experience:</span><br>
+                    The system provides a seamless and interactive user experience through a structured workflow.
+                    Users begin by registering and logging into the platform, followed by uploading their resume and
+                    selecting a target job role. The system processes the resume and generates real-time analysis
+                    results displayed on the dashboard.
+                    The dashboard includes ATS scores, extracted skills, identified skill gaps, and recommendations.
+                    Users can take adaptive quizzes based on their weak areas and receive feedback to improve their
+                    knowledge.
+                    The interface is designed to be intuitive and responsive, ensuring easy navigation across modules
+                    such as resume upload, analysis results, quizzes, and learning resources. The system also allows
+                    users to re-upload resumes and track improvements dynamically.
+                </p>
+            </div>
+            <div class="education">
+                <h1>Summary!</h1>
+                <div class="underline"></div>
+                <div class="college">
+                    <h1><strong>TOOLS</strong></h1>
+                    <p><ul>
+                        <li>Python, FastAPI, HTML, CSS,</li>
+                        <li>JavaScript,
+                        SQLite / JSON Storage,</li>
+                        <li>pdfplumber, python-docx,</li>
+                        <li>Passlib (bcrypt hashing),</li>
+                        <li>TF-IDF, Cosine Similarity,</li>
+                        <li>Hugging Face API </li>
+                    </ul>(LLM-based quiz generation)</p>
+                </div>
+                <div class="school">
+                    <h1><strong>STAGES</strong></h1>
+                    <ul>
+                        <li>Requirement Analysis and System Design</li>
+                        <li>Resume Parsing and Data Preprocessing</li>
+                        <li>ATS Scoring Engine Development</li>
+                        <li>Skill Gap Analysis Implementation</li>
+                        <li>AI Quiz and Recommendation Integration</li>
+                        <li>Testing, Optimization, and Deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navToggle = document.querySelector(".nav-toggle");
+            const header = document.querySelector("#header");
+
+            if (navToggle && header) {
+                navToggle.addEventListener("click", function () {
+                    header.classList.toggle("nav-open");
+                });
+            } else {
+                console.error("Hamburger toggle or header not found.");
+            }
+        });
+    </script>
+</body>
+
+</html>
